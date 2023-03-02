@@ -3,15 +3,21 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "nodemon server/server.js",
+    "start": "node server/server.js",
     "build": "webpack",
-    "dev": "webpack serve --open"
+    "dev": "concurrently \"webpack-dev-server --open --hot \" \"nodemon ./server/server.js \""
   },
   "author": "Judy Wu",
   "license": "ISC",
   "dependencies": {
+    "@apollo/server": "^4.4.0",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
     "express": "^4.18.2",
+    "graphql": "^16.6.0",
+    "http": "^0.0.1-security",
     "node": "^19.6.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
@@ -21,6 +27,7 @@
     "@babel/preset-env": "^7.20.2",
     "@babel/preset-react": "^7.18.6",
     "babel-loader": "^9.1.2",
+    "concurrently": "^7.6.0",
     "html-webpack-plugin": "^5.5.0",
     "nodemon": "^2.0.20",
     "path": "^0.12.7",
