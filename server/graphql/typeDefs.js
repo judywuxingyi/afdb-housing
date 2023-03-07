@@ -1,10 +1,16 @@
+
 export const typeDefs = `#graphql
-  type Book {
-    title: String
-    author: String
+  scalar Date
+  
+  type Project {
+    id: String
+    name: String
+    completion_date: Date
+    wage_status: String
+    total_units: Int
   }
 
   type Query {
-    books: [Book]
+    projects: [Project]
   }
 `;

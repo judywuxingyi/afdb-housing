@@ -1,12 +1,17 @@
-const books = [
-  {
-    title: 'The Awakening',
-    author: 'Kate Chopin',
-  }
-]
+import { GraphQLScalarType } from 'graphql';
 
 export const resolvers = {
+  Date: new GraphQLScalarType({
+    name: 'Date',
+    parseValue(value) {
+      return new Date(value);
+    },
+    serialize(value) {
+      return value.toISOString();
+    }
+  }),
   Query: {
-    books: () => books,
+    projects: () => projects,
   },
+
 };
