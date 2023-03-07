@@ -9,7 +9,6 @@ import { ApolloServerPluginDrainHttpServer } from '@apollo/server/plugin/drainHt
 import { typeDefs }  from './graphql/typeDefs.js';
 import { resolvers } from './graphql/resolvers.js';
 
-
 const app = express();
 const PORT = 3000;
 

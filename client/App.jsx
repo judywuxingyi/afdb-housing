@@ -1,8 +1,7 @@
-import React, { Component } from 'react';
-import { render } from 'react-dom';
+import React from 'react';
 
-export default App = () => {
-  return(
+export const App = () => {
+  return (
     <>
       <div>
         <h1>afdb housing</h1>
