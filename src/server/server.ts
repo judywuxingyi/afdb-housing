@@ -1,4 +1,5 @@
 import express from 'express';
+import path from 'path';
 import cors from 'cors';
 import http from 'http';
 
@@ -37,7 +38,7 @@ const ApolloServerStart = async() => {
     }),
   );
   
-  await new Promise((resolve) => httpServer.listen({ port: PORT }, resolve));
+  await new Promise<void>((resolve) => httpServer.listen({ port: PORT }, resolve));
   console.log(`Server ready at http://localhost:3000/graphql`);
 }
 

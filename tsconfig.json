@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+      "outDir": "./dist/",
+      // "strictNullChecks": true,   // enable strict null checks as a best practice
+      "module": "ESNext",  
+      "target": "es2018",            // specify ECMAScript target version      // specify module code generation
+      "jsx": "react",             // use typescript to transpile jsx to js
+      "allowJs": true,             // allow a partial TypeScript and JavaScript codebase
+      "moduleResolution": "node",
+      "allowSyntheticDefaultImports": true,
+      "esModuleInterop": true,
+  },
+  "ts-node": {
+    "esm":true,
+    "compilerOptions": {
+      "module": "commonjs",
+    },
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"],
+}
