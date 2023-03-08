@@ -1,10 +1,69 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>afdb housing</title>
-  <script defer src="/bundle.js"></script></head>
-  <body>
-    <div id="root"></div>
-  </body>
-</html>
+<head><script defer src="/bundle.js"></script></head>Html Webpack Plugin:
+<pre>
+  Error: Child compilation failed:
+  Module not found: Error: Can't resolve '/Users/judy/Codesmith/afdb-housing/client/index.ht  ml' in '/Users/judy/Codesmith/afdb-housing'
+  ModuleNotFoundError: Module not found: Error: Can't resolve '/Users/judy/Codesmith/afdb-ho  using/client/index.html' in '/Users/judy/Codesmith/afdb-housing'
+      at /Users/judy/Codesmith/afdb-housing/node_modules/webpack/lib/Compilation.js:2016:28
+      at /Users/judy/Codesmith/afdb-housing/node_modules/webpack/lib/NormalModuleFactory.js:  798:13
+      at eval (eval at create (/Users/judy/Codesmith/afdb-housing/node_modules/tapable/lib/H  ookCodeFactory.js:33:10), <anonymous>:10:1)
+      at /Users/judy/Codesmith/afdb-housing/node_modules/webpack/lib/NormalModuleFactory.js:  270:22
+      at eval (eval at create (/Users/judy/Codesmith/afdb-housing/node_modules/tapable/lib/H  ookCodeFactory.js:33:10), <anonymous>:9:1)
+      at /Users/judy/Codesmith/afdb-housing/node_modules/webpack/lib/NormalModuleFactory.js:  434:22
+      at /Users/judy/Codesmith/afdb-housing/node_modules/webpack/lib/NormalModuleFactory.js:  120:11
+      at /Users/judy/Codesmith/afdb-housing/node_modules/webpack/lib/NormalModuleFactory.js:  670:25
+      at /Users/judy/Codesmith/afdb-housing/node_modules/webpack/lib/NormalModuleFactory.js:  855:8
+      at /Users/judy/Codesmith/afdb-housing/node_modules/webpack/lib/NormalModuleFactory.js:  975:5
+  
+  - Compilation.js:2016 
+    [afdb-housing]/[webpack]/lib/Compilation.js:2016:28
+  
+  - NormalModuleFactory.js:798 
+    [afdb-housing]/[webpack]/lib/NormalModuleFactory.js:798:13
+  
+  
+  - NormalModuleFactory.js:270 
+    [afdb-housing]/[webpack]/lib/NormalModuleFactory.js:270:22
+  
+  
+  - NormalModuleFactory.js:434 
+    [afdb-housing]/[webpack]/lib/NormalModuleFactory.js:434:22
+  
+  - NormalModuleFactory.js:120 
+    [afdb-housing]/[webpack]/lib/NormalModuleFactory.js:120:11
+  
+  - NormalModuleFactory.js:670 
+    [afdb-housing]/[webpack]/lib/NormalModuleFactory.js:670:25
+  
+  - NormalModuleFactory.js:855 
+    [afdb-housing]/[webpack]/lib/NormalModuleFactory.js:855:8
+  
+  - NormalModuleFactory.js:975 
+    [afdb-housing]/[webpack]/lib/NormalModuleFactory.js:975:5
+  
+  - child-compiler.js:169 
+    [afdb-housing]/[html-webpack-plugin]/lib/child-compiler.js:169:18
+  
+  - Compiler.js:551 finalCallback
+    [afdb-housing]/[webpack]/lib/Compiler.js:551:5
+  
+  - Compiler.js:577 
+    [afdb-housing]/[webpack]/lib/Compiler.js:577:11
+  
+  - Compiler.js:1196 
+    [afdb-housing]/[webpack]/lib/Compiler.js:1196:17
+  
+  
+  - Hook.js:18 Hook.CALL_ASYNC_DELEGATE [as _callAsync]
+    [afdb-housing]/[tapable]/lib/Hook.js:18:14
+  
+  - Compiler.js:1192 
+    [afdb-housing]/[webpack]/lib/Compiler.js:1192:33
+  
+  - Compilation.js:2787 finalCallback
+    [afdb-housing]/[webpack]/lib/Compilation.js:2787:11
+  
+  - Compilation.js:3092 
+    [afdb-housing]/[webpack]/lib/Compilation.js:3092:11
+  
+  
+</pre>

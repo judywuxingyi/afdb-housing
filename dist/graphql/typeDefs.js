@@ -1,0 +1,1 @@
+export var typeDefs = "#graphql\n  scalar Date\n  \n  type Project {\n    id: String\n    name: String\n    completion_date: Date\n    wage_status: String\n    total_units: Int\n  }\n\n  type Query {\n    projects: [Project]\n  }\n";
